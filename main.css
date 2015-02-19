@@ -1,6 +1,6 @@
 
 body {
-  margin: 0;
+  margin: 0 0 50px;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Cuprum', sans-serif;
@@ -44,14 +44,22 @@ header {
   float: right;
 }
 
+.title {
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  color: #dfe2fc;
+}
+
 .new-game-icon {
   width: 250px;
-  height: 50px;
-  line-height: 50px;
-  margin: 20px auto;
+  height: 45px;
+  line-height: 45px;
+  margin: 15px auto;
   padding: 0;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   background: #e58300;
   color: white;
 }
@@ -65,19 +73,19 @@ li {
   margin: 8px 0;
 }
 
-.games {
+.games-wrapper {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
-.games h2 {
+.games-wrapper h2 {
   text-transform: uppercase;
   margin-bottom: -10px;
   color: #9b91b8;
 }
 
-.games li {
+.games-wrapper li {
   height: 100px;
   background: white;
   border-radius: 8px;
@@ -132,3 +140,33 @@ div.timed {
 i.fa-clock-o {
   font-size: 24px;
 }
+
+
+
+.board-wrapper {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.board {
+  margin: 40px 25px;
+}
+
+.board div {
+  line-height: 1px;
+}
+
+.board span {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 8px;
+}
+
+.board div:nth-child(odd) span:nth-child(even),
+.board div:nth-child(even) span:nth-child(odd){
+  background-color: white;
+}
+
+
